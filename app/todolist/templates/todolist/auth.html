@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'todolist/auth.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6b3d39f47a.js" crossorigin="anonymous"></script>
+
+    <title>TodoList App</title>
+
+</head>
+<body>
+    <div class = "_container" id="auth">
+        <div class = "auth-container">
+            <div class="links-header">
+                <div class="link" id="login-link" onclick="load_login()">
+                    Login
+                </div>
+                <div class="link" id = "register-link" onclick="load_register()">
+                    Sign up
+                </div>
+            </div>
+            <div class="errors" id="errors">
+
+            </div>
+            <form class="form" autocomplete="off" id="login-form" onsubmit="login(event)">
+                <label for="username">Username</label>
+                <input type="text" id= 'username'>
+                <label for="password">Password</label>
+                <input type="password"  id= 'password'>
+                <button type="submit" class = "submit" id="submit-button">Submit</button>
+                <div class="spin-container" id="spinner">
+                    <div class="spinner-border text-light spin" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </form>
+            <form  class="form" autocomplete="off" id="register-form" onsubmit="register(event)">
+                <label for="username">Username</label>
+                <input type="text"  id= 'username1'>
+                <label for="email">Email</label>
+                <input type="text"  id= 'email1'>
+                <label for="password">Password</label>
+                <input type="password"  id= 'password1'>
+                <label for="confirmation">Retype password</label>
+                <input type="password"  id= 'confirmation'>
+                <div class="spin-container" id="spinner-register">
+                    <div class="spinner-border text-light spin" role="status" >
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <button type="submit" class = "submit" id="register-submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- <div id="main">
+        <h1>{{user.username}}</h1>
+    </div> -->
+    <script src="{% static 'todolist/auth.js'%}"></script>
+</body>
+</html>

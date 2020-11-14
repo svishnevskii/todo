@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+._container {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.auth-container  {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px ;
+    position: relative;
+}
+
+.links-header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-user {
+    width: 100px;
+    height: 100px;
+    transform: translate(0,-70%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    border: 3px solid #3d424d;
+    background: #636c7c;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.link{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #555D6B;
+    border-bottom: 2px solid #555D6B;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active {
+    color: #00a4ff;
+    border-bottom: 2px solid #00a4ff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 35px;
+    background: #555D6B;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FEFFFF
+}
+
+label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #555D6B;
+    margin-top: 1rem;
+}
+input:focus{
+    outline: none;
+}
+
+.submit{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    height: 50px;
+    background: #3496e7;
+    border: none;
+    border-radius: 10px;
+    color: #FEFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.spin-container{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.submit:hover{
+    background: #00a4ff;
+}
+
+.submit:focus {
+    outline: none;
+}
+
+@media screen and (max-width:370px){
+
+
+    input {
+        margin-bottom: 20px;
+        width: 200px;
+        height: 35px;
+        background: #555D6B;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: #FEFFFF
+    }
+}
+
+@media screen and (max-width:260px){
+
+
+    input {
+        margin-bottom: 20px;
+        width: 150px;
+        height: 35px;
+        background: #555D6B;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: #FEFFFF
+    }
+}

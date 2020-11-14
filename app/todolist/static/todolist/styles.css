@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 60%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    height: 80px;
+    width: 98%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.name{
+    margin-right: 15px;
+    color: #2E3137;
+    font-weight: 500;
+}
+
+h2{
+    color: black;
+    font-weight: 700;
+}
+
+.main-wrap{
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    position: absolute;
+    z-index: -11;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.list-container{
+    margin-top: 10px;
+    height: calc(80% - 80px);
+    width: 60%;
+
+}
+
+.list-header{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 10px 0;
+}
+
+.item-header{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
+}
+
+
+.item-header a, .item-header i{
+    color: rgb(143, 140, 140);
+
+}
+
+.item-header a{
+    text-decoration: none;
+
+}
+
+.item-header i{
+    margin-bottom: 10px;
+}
+.second-container{
+    height: 30%;
+    margin-top: 15px;
+    margin-bottom: 20px
+}
+.task-input {
+    border: none;
+    padding: 5px 20px;
+    width: 100%;
+}
+.task-input:focus {
+    outline: none;
+}
+
+.task {
+    padding: 15px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks-container, .teams-container{
+    height: 400px;
+    width: 100%;
+    overflow: auto;
+}
+
+.edit-task {
+    border: none;
+    width: 95%;
+}
+
+.edit-task:focus {
+    outline: none;
+}
+
+.form-check {
+    width: 95%;
+    display: flex;
+}
+
+.modal-content{
+    background: rgb(219, 219, 219) !important;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin-right: 10px;
+}
+
+.modal-footer{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+@media screen and (max-width:500px){
+    h2{
+        font-size: 18px;
+    }
+
+}
